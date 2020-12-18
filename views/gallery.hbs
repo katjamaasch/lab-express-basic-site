@@ -3,10 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <title>Photo Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <script src="/slideshow.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="/css/gallery.css" />
   </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="http://localhost:3000/"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="http://localhost:3000/about"
+            >About Spock <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="http://localhost:3000/gallery"
+            >Check out my secret hobby</a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="http://localhost:3000/works"
+            >My top 10 adventures</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
   <body>
     <h1>Welcome in this little Photo Gallery</h1>
     <div class="spacecats w3-content w3-display-container">
