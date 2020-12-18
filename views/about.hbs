@@ -9,45 +9,18 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/stylesheets/about.css" />
+    <link rel="stylesheet" href="./css/about.css" />
   </head>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="http://localhost:3000/"
-            >Home <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="http://localhost:3000/about"
-            >About Spock <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="http://localhost:3000/gallery"
-            >Check out my secret hobby</a
-          >
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="http://localhost:3000/works"
-            >My top 10 adventures</a
-          >
-        </li>
-      </ul>
-    </div>
-  </nav>
+ 
+ {{> navbar }}
+
   <body>
-    <h1>Commander Spock</h1>
+    <h1>Who is Commander Spock? </h1>
     <img
-      src="./images/spoksi.jpg"
+      src="./images/spockmeme.jpg"
       alt="The next free Vulcan is reserved for you"
-      width="300"
       height="300"
+      class="meme"
     />
-    <section>
-      Heritage: mixed human-Vulcan “You’re human, too. Let that part of you come
-      through.”
-    </section>
   </body>
 </html>
