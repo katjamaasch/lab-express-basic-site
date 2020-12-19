@@ -39,10 +39,27 @@ const gallery = {
 
 webApplication.listen(3000, () => console.log('Server is working'));
 
-webApplication.get('/', (req, res) => res.render('home-page', home));
+webApplication.get('/about', (req, res) => {
+  res.render('about', about);
+});
 
-webApplication.get('/about', (req, res) => res.render('about', about));
-
-webApplication.get('/gallery', (req, res) => res.render('gallery', gallery));
-
-webApplication.get('/works', (req, res) => res.render('works', works));
+webApplication.get('/:foo', (req, res) => {
+  const name = req.params.foo;
+  console.log(name);
+  switch (name) {
+    case 'home':
+      res.render('home-page', home);
+    case 'about':
+      console.log(about);
+      res.render('about', about);
+      break;
+    case 'gallery':
+      res.render('gallery', gallery);
+      break;
+    case 'works':
+      res.render('works', works);
+      break;
+    default:
+      res.render('home-page', home);
+  }
+});
